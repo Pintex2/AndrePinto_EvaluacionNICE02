@@ -4,6 +4,8 @@
  */
 
 package com.mycompany.andrepinto_evaluacionnice02;
+import java.util.Scanner;
+import java.util.Arrays;
 
 /**
  *
@@ -12,6 +14,27 @@ package com.mycompany.andrepinto_evaluacionnice02;
 public class AndrePinto_EvaluacionNICE02 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+      String words;
+      Scanner leer=new Scanner(System.in);
+      
+      System.out.print("Introduzca las palabas:");
+      words=leer.nextLine();
+      sortInnerContent(words);
+     
+    }
+    public static void sortInnerContent(String words){
+          
+           String [] parts = words.split(" ");
+           for(int i=0;i<parts[i].length();i++){
+               
+//               for(int j=1;j<parts[i].length()-1;j++){
+//                  Arrays.sort(parts[i], 1, parts[i].length()-1));
+////                   System.out.println(Array.sort(parts[i],1,);
+//               }
+               System.out.println(parts[i].length());
+               System.out.println(parts[i]);
+           }
+       
+          
     }
 }
